@@ -60,8 +60,9 @@ After comprehensive evaluation, the model now classifies audio into **6 emotiona
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/sirius073/speech-emotion-detector.git
-cd speech-emotion-detector
+git clone https://github.com/Vanshitaaaaaa/emotion_classification_on-speech_data
+cd emotion_classification_on-speech_data
+
 ```
 
 ### 2. Install Dependencies
