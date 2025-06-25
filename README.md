@@ -8,19 +8,20 @@ After comprehensive evaluation, the model now classifies audio into **6 emotiona
 
 | Emotion   | Accuracy | Status       |
 |-----------|----------|--------------|
-| **happy**   | 84%      | ✅ Retained  |
-| **angry**   | 82%      | ✅ Retained  |
-| **surprise**| 81%      | ✅ Retained  |
-| **disgust** | 76%      | ✅ Retained  |
-| **neutral** | 73%      | ⚠️ Marginal |
-| **calm**    | 80%      | ✅ Retained  |
-| **sad**     | 68%      | ❌ Dropped   |
-| **fearful** | 72%      | ❌ Dropped   |
+| **happy**   | 82.67%      | ✅ Retained  |
+| **angry**   | 78.67%      | ✅ Retained  |
+| **surprise**| 71.79%      | ⚠️ Marginal  |
+| **disgust** | 46.15%      | ❌ Dropped |
+| **neutral** | 76.32%      | ✅ Retained |
+| **calm**    | 88.00%      | ✅ Retained  |
+| **sad**     | 73.33%      | ⚠️ Marginal   |
+| **fearful** | 53.33%     | ❌ Dropped   |
 
 ### Accuracy Improvements
-- **Original 8-class accuracy**: 77.6%
-- **Revised 6-class accuracy**: 85.2% (+7.6% improvement)
-- **F1 Score**: 84% (+7% improvement)
+- **Original 8-class accuracy**: 72.71%
+- **Revised 6-class accuracy**: 79.31%
+- **Revised 4-class accuracy**: 82.13%
+- **Macro F1 Score**: 71.77%
 
 ## Technical Implementation
 ### Audio Processing Pipeline
@@ -50,8 +51,9 @@ After comprehensive evaluation, the model now classifies audio into **6 emotiona
 ## Performance Comparison
 | Model Type          | Accuracy | Dataset     |
 |---------------------|----------|-------------|
-| Baseline (8-class)  | 77.6%    | RAVDESS     |
-| **Revised (6-class)** | **85.2%** | RAVDESS     |
+| Baseline (8-class)  | 72.71%    | RAVDESS     |
+| **Revised (6-class)** | **79.31%** | RAVDESS     |
+| **Revised (4-class)** | **82.13%** | RAVDESS     |
 | Vision Transformer  | 71.6%    | RAVDESS [2] |
 | Conv1D CNN          | 92%      | RAVDESS [3] |
 | LSTM+CNN            | 97.5%    | Custom [5]  |
