@@ -21,7 +21,7 @@ After comprehensive evaluation, the model now classifies audio into **6 emotiona
 - **Original 8-class accuracy**: 72.71%
 - **Revised 6-class accuracy**: 79.31%
 - **Revised 4-class accuracy**: 82.13%
-- **Macro F1 Score**: 71.77%
+- **Macro F1 Score**: 81.77%
 
 ## Technical Implementation
 ### Audio Processing Pipeline
